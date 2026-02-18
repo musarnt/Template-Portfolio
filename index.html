@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musa's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Musa</h1>
+      <p>Web Developer | Frontend | HTML & CSS</p>
+      <button id="theme-toggle" aria-label="Toggle theme">Change theme</button>
+      <nav>
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about-me">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm Musarnt, passionate about web development and designing attractive, functional
+          interfaces. I specialize in HTML and CSS to create modern and responsive websites.
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="proyectos-grid">
+          <div class="proyecto">
+            <h3>Mini Personal Blog</h3>
+            <p>
+              A simple blog built only with HTML and CSS where I share articles about technology and
+              web development.
+            </p>
+          </div>
+          <div class="proyecto">
+            <h3>Coffee Shop Landing Page</h3>
+            <p>
+              A presentation page for a fictional coffee shop, including menu, opening hours, and a
+              contact form.
+            </p>
+          </div>
+          <div class="proyecto">
+            <h3>Photo Gallery</h3>
+            <p>
+              An interactive and responsive gallery to showcase photos, using only HTML and CSS
+              Grid.
+            </p>
+          </div>
+          <div class="proyecto">
+            <h3>Creative Portfolio</h3>
+            <p>A visual portfolio to display my projects and skills, with CSS animations.</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          You can contact me by email:
+          <a href="mailto:riwimusa@ejemplo.com">riwimusa@ejemplo.com</a>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Musarnt. All rights reserved.</p>
+    </footer>
+    <script>
+      const btn = document.getElementById("theme-toggle");
+      btn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          btn.innerHTML = "Change theme";
+        } else {
+          btn.innerHTML = "Change theme";
+        }
+      });
+    </script>
+  </body>
+</html>
